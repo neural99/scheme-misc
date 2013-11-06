@@ -1,0 +1,11 @@
+;;1.3
+(define (proc1-3 a b c)
+  (if (> a b)
+      (+ (* a a)
+         (if (> b c)
+             (* b b)
+             (* c c)))
+      (+ (* b b)
+         (if (> a c)
+             (* a a)
+             (* c c)))))
